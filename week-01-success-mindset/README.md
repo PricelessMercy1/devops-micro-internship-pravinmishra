@@ -33,7 +33,9 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+Most people around me believe you need to plan extensively, weigh every angle, and feel ready before you start something. I don't operate that way. When an idea drops, my first move isn't a feasibility study, it's prayer. I ask God to go ahead of me, and then I just start. I trust that the lessons I need will show up while I'm in motion, not before I begin. It's not that I don't think, I do, but I've learned that overthinking can quietly become a way of avoiding the start line. I'd rather be corrected mid-action than perfectly prepared and never moving.
+
+In short: 'Most people plan first, then move. I move first, with God leading and let the lessons catch up to me along the way'.
 
 ---
 
@@ -55,11 +57,11 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Integrity is not just a nice word.
 
 ### Evidence from my life
 
-Add your answer here...
+I've learned that nothing stays hidden. Anytime I've cut corners or done something I shouldn't, it's caught up with me — every time. So now I just don't bother trying to get away with anything.
 
 ---
 
@@ -67,11 +69,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Kindness Pays..
 
 ### Evidence from my life
 
-Add your answer here...
+I've extended goodwill to people with no agenda, and it has come back in ways I couldn't have planned or predicted. Consistently.
 
 ---
 
@@ -79,11 +81,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Be Myself Always.
 
 ### Evidence from my life
 
-Add your answer here...
+Being yourself is the lowest-effort, highest-return strategy there is. Every time I've tried to perform a version of myself that I thought people wanted, it was exhausting and it didn't stick. Showing up as I am has always worked better.
 
 ---
 
@@ -135,11 +137,23 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+By the time most people noticed her LinkedIn, she had already done the work.
+Aanuoluwapo Tolu-Omodara spent four years at Access Bank as a Domestic Funds Transfer and Reconciliation Analyst — tracking transactions, chasing discrepancies, balancing books at the end of long days. Not glamorous work, but the kind that sharpens a person. She learned how money moves, where it hides, and what it looks like when something is off.
+She left, not because she failed, but because she'd quietly outgrown the role. She joined Famous Capital Microfinance Bank as Operations Manager and Head Teller, and it wasn't long before she was doing more than her title required — consulting on strategy, shaping product design, helping a small institution compete smarter.
+Around the same time, she and her husband built Priceless Foods, a Nigerian foodstuff brand selling the ingredients that hold households together: beans, crayfish, palm oil, egusi, ogbono. He ran the day-to-day. She carried everything else.
+Then in June 2026; job, degree at Babcock, business, all still running — she enrolled in the DevOps Micro Internship under Pravin Mishra. She didn't wait for things to slow down. They never do, for women like her.
+She shipped her first CI/CD pipeline before the cohort ended, documented it, and posted it. People stopped scrolling. The views came. Then the impressions. Then the messages. She kept going.
+Within two years, she'd earned her AWS Cloud Practitioner certification, contributed to an open-source fintech project, and led a process automation initiative that cut reconciliation turnaround time significantly. Her GitHub told the story: commits, pipelines, infrastructure scripts, and plain-language posts explaining what she built and why.
+She completed her Computer Science degree at Babcock. Her final year project wasn't theoretical, it was a working payroll management system, built end to end with her team. After years managing payrolls by hand, building the system from the code up felt less like coursework and more like a conclusion.
+By 2029, she'd moved into a consulting role at a fintech firm in Lagos, leading DevOps implementation for a core banking integration project. She was often the only person in the room who'd run the floor at a microfinance bank and could also write the code to modernize one. That combination was rare, and institutions paid for it.
+She mentored women standing at the same crossroads she once stood at. She told them what she knew: you don't need to be fully ready. You need to move.
+She didn't reinvent herself. She revealed herself — one shipped project, one post, one step of faith at a time.
+**P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) ( https://discord.pravinmishra.com/ ).**
+
 
 ### Public Link
 
-Paste your link here:
+https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_what-my-version-20-looks-like-by-the-time-share-7478453725913739267-4_KT/?utm_source=share&utm_medium=member_android&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ
 
 `__________________________`
 
@@ -167,13 +181,18 @@ This is about self-awareness, not judgment.
 
 **Yes / No**
 
-If Yes:
+Yes
 
 **What emotion did you feel?** (minimum 50–100 words)
 
 ## Answer
 
-Add your answer here...
+I have.
+And I won't dress it up it made me feel terrible. For days I felt low, disappointed in myself, and honestly, I didn't like who I was in that moment.
+But here's what I did: I took it to God. I made it right where I could. And then I chose to move forward, not dragging the guilt, but carrying the lesson.
+That experience shaped something in me. It reminded me that integrity isn't just about the big, obvious moments. It lives in the small choices, the ones nobody is watching.
+As I grow in my career and step into new spaces, this is the standard I hold myself to: do the right thing, even when the shortcut is tempting.
+Because at the end of the day, your reputation is built on the quiet decisions you make when no one is looking.
 
 ---
 
@@ -199,16 +218,16 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. The 5am Club by Robin Sharma
+2. Atomic Habits by James Clear
+3. Rich dad Poor Dad by Robert Kiyosaki
+4. Multipliers by Liz Wiseman
+5. Boundaries by Helen Cloud and John Townsend
+6. The Phoenix project  by Gene Kim
+7. The Coding Career handbook by Shu Ding
+8. Deepwork by Cal Newport
+9. The Psycology of Money by Morgan Housel
+10. The Bible
 
 ---
 
@@ -237,17 +256,15 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-
+* Faith
+* Relationship with God
+* Time
+* Focus
+* Learning & Skill
+* Health & Energy
+* Money & Finance
+* Integrity
+* Output
 ---
 
 # Assignment 7. Brain Dump + 5-Month System Plan
@@ -272,7 +289,7 @@ Examples:
 
 Answer:
 
-Add your answer here...
+Yes
 
 ---
 
@@ -290,19 +307,23 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
-
----
+🗓️ Monday – Friday
+Work 9–5. Show up fully. Lead well. Learn from every transaction, every challenge, every person across the table.
+The job is also training.
+💻 Saturday
+DMI — DevOps Micro Internship. Hands on. No excuses. This is where I'm building the tech skills that will expand what I can do professionally.
+📖 Sunday
+Babcock. Computer Science doesn't stop because life is busy. I show up for my degree too.
 
 ### Focus Blocks
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+Monday-Saturday, showing up 2 hours per day
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+6 sessions per week
 
 ---
 
@@ -316,7 +337,26 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
+Phone Rules
+
+Phone faces down during deep work
+No scrolling first thing in the morning — Word and prayer come first
+Notifications off during study and DMI sessions
+Designated times to check messages — not every 5 minutes
+
+Social Media Rules
+
+Create before I consume
+Set a time limit — LinkedIn is for learning and building, not endless scrolling
+No social media during work hours except intentional posting
+Log off when I'm done — don't leave tabs open as a temptation
+
+Environment Setup
+
+Workspace cleared before I sit down to work or study
+Earphones in = focus mode on
+Water bottle on the desk — no excuses to keep getting up
+Everything I need is ready before I start — no "let me just go get..." traps
 
 ---
 
@@ -324,28 +364,38 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+I Almost Talked Myself Out of It..
+When I heard about the DevOps Micro Internship, my first thought wasn't excitement. It was a list of reasons why it wasn't possible.
+The rules and structure of the program. The early morning Saturday sessions. Everything else already competing for my time and energy.
+I almost didn't start.
+But I did. And that decision has already taught me something I won't forget:
+Whatever I set my heart to do, I can achieve it.
+Not because the schedule got easier. It didn't. Not because everything aligned perfectly. It never does. But because I stopped waiting for the right conditions and just showed up anyway.
+DMI didn't just introduce me to DevOps concepts. It showed me something about myself that no classroom or job description ever could, that I am more capable than my circumstances suggest, and that the stretch is exactly the point.
+If you're sitting on something right now because the timing isn't right; I want you to know the timing was never right for me either.
+I started anyway. You can too.
+#DMI #DevOps #GrowthMindset #TechJourney #PravinMishra
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+Endless scrolling on social media especially when I am tired. I am supposed to take some rest and be energized to do more quality things.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+Wake up at 4:30am — devotion, then I'm at my desk by 5:15am ready before class starts
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
 
-`__________________________`
+https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_insightsandaccountability-growth-learninganddevelopment-share-7478463590346448897-Tml6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
-- Blog / Medium : **ADD LINK HERE**  
+- LinkedIn Post URL: (https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_what-my-version-20-looks-like-by-the-time-share-7478453725913739267-4_KT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ) 
+- Blog / Medium : https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_insightsandaccountability-growth-learninganddevelopment-share-7478463590346448897-Tml6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ 
 
 ---
 

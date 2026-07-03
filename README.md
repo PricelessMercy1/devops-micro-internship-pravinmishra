@@ -13,11 +13,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Aanuoluwapo Tolu-Omodara |
+| **LinkedIn** | https://www.linkedin.com/in/aanuoluwapo-mary-tolu-omodara-5582281a1?utm_source=share_via&utm_content=profile&utm_medium=member_android |
+| **Location** | Lagos, Nigeria |
+| **Background** | Banking Operations, Funds Transfer and Reconciliation |
+| **Goal** | Transition from finance and operations into a tech career, gaining real, hands-on DevOps skills from the ground up. I want to use this programme to pivot confidently into tech and open new career possibilities beyond banking and operations. |
 
 ---
 
@@ -64,7 +64,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 ---
 
-**Your stack (uncomment each badge as you earn it):**
+**Your stack 
 
 <!-- Week 00 → Internet & Networking Basics -->
 <!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
@@ -111,8 +111,6 @@ This is not a course. It is an internship-style program — real deployments, re
 <!-- Week 14 → Final Project / Capstone -->
 <!-- [![Week 14 – Capstone](./badges/week-14.svg)](./week-14-final-project/) -->
 
-*Complete a week → uncomment the badge → watch your stack grow.*
-
 ---
 
 ## Program Overview
@@ -133,7 +131,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
+| 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_insightsandaccountability-growth-learninganddevelopment-share-7478463590346448897-Tml6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_what-my-version-20-looks-like-by-the-time-share-7478453725913739267-4_KT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
@@ -157,7 +155,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 *Awarded upon completing Week 14 — Final Project.*
 
-<!-- Drop your certificate image here -->
+[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
 
 ---
 
@@ -166,6 +164,6 @@ This is not a course. It is an internship-style program — real deployments, re
 If you found this repo useful or want to follow my DevOps journey:
 
 - ⭐ Star this repo
-- 🔗 Connect with me on [LinkedIn](#)
+- 🔗 Connect with me on [www.linkedin.com/in/aanuoluwapo-mary-tolu-omodara-5582281a1](#)
 - 🌐 Learn more about the program: https://dmi.pravinmishra.com
 - 💬 Join the community: https://discord.pravinmishra.com
