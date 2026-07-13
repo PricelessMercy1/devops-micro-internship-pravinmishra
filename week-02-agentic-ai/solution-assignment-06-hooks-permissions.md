@@ -20,7 +20,7 @@ Create a team-level `settings.json` file with allow and deny rules for safe comm
 
 #### Screenshot 1 — Screenshot 1 — `settings.json` open in VS Code showing the full permissions configuration
 
-Add your screenshot here.
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-28.png)
 
 ---
 
@@ -34,7 +34,7 @@ Add a hook that intercepts user prompts before Claude starts execution and block
 
 #### Screenshot 2 — settings.json showing UserPromptSubmit hook
 
-Add your screenshot here.
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-29.png)
 
 ---
 
@@ -48,8 +48,8 @@ Extend `settings.json` with a PreToolUse hook that blocks dangerous Bash command
 
 #### Screenshot 3 — full settings.json with permissions and hooks
 
-Add your screenshot here.
-
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-30.png)
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-30-2.png)
 ---
 
 # Task 4 — Test the UserPromptSubmit Hook

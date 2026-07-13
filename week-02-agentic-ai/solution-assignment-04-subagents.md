@@ -20,7 +20,7 @@ Create the `.claude/agents/` directory and add all required agent files.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/agents/` with all 3 files
 
-Add your screenshot here.
+![Week 02 Screenshot](Screenshots/Week-02-screenshot-17.png)
 
 ---
 
@@ -34,19 +34,19 @@ Analyze the configuration differences between the three agents and demonstrate u
 
 #### 1. Why does the cost optimizer use Haiku instead of Sonnet?
 
-Add your answer here...
+The cost optimizer uses Haiku because its main job is to quickly identify cost-saving opportunities in the Terraform infrastructure. This task does not require deep reasoning like a security audit, so Haiku provides faster responses while using fewer resources.
 
 ---
 
 #### 2. Why does the security auditor NOT have Write in its tools list?
 
-Add your answer here...
+The security auditor does not have the Write tool because it is designed to inspect and report security issues without modifying any files. Limiting it to read-only tools helps prevent accidental changes and ensures the audit remains safe and reliable.
 
 ---
 
 #### 3. Why does the tf-writer use `inherit` instead of a specific model?
 
-Add your answer here...
+The tf-writer uses inherit so it automatically uses the same model as the main Claude session instead of being tied to a specific model. This gives it the flexibility to use whichever model is currently active while generating or editing Terraform code.
 
 ---
 
@@ -54,14 +54,13 @@ Add your answer here...
 
 #### Screenshot 2 — `security-auditor.md` frontmatter showing model and tools configuration
 
-Add your screenshot here.
+![Week 02 Screenshot](Screenshots/Week-02-screenshot-18.png)
 
 ---
 
 #### Screenshot 3 — `cost-optimizer.md` frontmatter showing the model and tools configuration
 
-Add your screenshot here.
-
+![Week 02 Screenshot](Screenshots/Week-02-screenshot-19.png)
 ---
 
 # Task 3 — Run the Security Auditor
@@ -74,14 +73,13 @@ Trigger the security auditor agent and analyze the generated security report for
 
 #### Screenshot 4 — The delegation message showing Claude launched the security-auditor
 
-Add your screenshot here.
+![Week 02 Screenshot](Screenshots/Week-02-screenshot-20.png)
 
 ---
 
 #### Screenshot 5 — Security audit report output
 
-Add your screenshot here.
-
+![Week 02 Screenshot](Screenshots/Week-02-screenshot-21-2.png)
 ---
 
 # Task 4 — Run the Cost Optimizer
@@ -94,7 +92,7 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 #### Screenshot 6 — The full cost optimization report
 
-Add your screenshot here.
+![Week 02 Screenshot](Screenshots/Week-02-screenshot-22.png)
 
 ---
 
@@ -110,7 +108,7 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`__________________________`
+https://github.com/PricelessMercy1/Ultimate-Agentic-DevOps-with-Claude-Code
 
 ---
 
