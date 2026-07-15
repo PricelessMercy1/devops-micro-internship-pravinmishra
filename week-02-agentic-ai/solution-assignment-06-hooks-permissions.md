@@ -20,7 +20,7 @@ Create the `.claude` directory structure required for team-level Claude Code con
 
 #### Screenshot 1 — `.claude` folder structure visible in VS Code Explorer
 
-![Week 02 Screenshots](Screenshots/Week-02-screenshot-28.png)
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-36.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a hook that checks user prompts before Claude processes them and blocks r
 
 #### Screenshot 2 — `user-prompt-guard.sh` open in VS Code showing the hook script
 
-![Week 02 Screenshots](Screenshots/Week-02-screenshot-29.png)
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-37.png)
 
 ---
 
@@ -48,8 +48,7 @@ Create a hook that runs before Claude executes Bash commands and blocks dangerou
 
 #### Screenshot 3 — `pre-tool-guard.sh` open in VS Code showing the hook script
 
-![Week 02 Screenshots](Screenshots/Week-02-screenshot-30.png)
-![Week 02 Screenshots](Screenshots/Week-02-screenshot-30-2.png)
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-38.png)
 ---
 
 # Task 4 — Create the PostToolUse Hook Script
@@ -62,7 +61,7 @@ Create a hook that runs after Claude executes a Bash command and logs selected T
 
 #### Screenshot 4 — `post-tool-logger.sh` open in VS Code showing the hook script
 
-Add your screenshot here.
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-39.png)
 
 ---
 
@@ -76,7 +75,8 @@ Configure Claude Code permissions and connect the hook scripts created in the pr
 
 #### Screenshot 5 — `settings.json` open in VS Code showing permissions and hooks configuration
 
-Add your screenshot here.
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-40.png)
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-40-2.png)
 
 ---
 
@@ -90,7 +90,7 @@ Prove the prompt-level hook works by typing a destructive prompt and verifying i
 
 #### Screenshot 6 — UserPromptSubmit hook blocking the destructive prompt
 
----
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-41.png)
 
 # Task 7 — Test the PreToolUse Hook
 
@@ -102,7 +102,7 @@ Prove the tool-level hook works by asking Claude to execute a dangerous Bash com
 
 #### Screenshot 7 — PreToolUse hook blocking terraform destroy
 
----
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-47.png)
 
 # Task 8 — Test the PostToolUse Logging Hook
 

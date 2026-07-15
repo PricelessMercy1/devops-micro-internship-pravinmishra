@@ -73,7 +73,7 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 #### Screenshot 6 — Claude's `/tf-plan` response showing it ran the command and analyzed the result (pass or auth error both count)
 
-![Week 02 Screenshot](Screenshots/Week-02-screenshot-16.png)
+![Week 02 Screenshot](Screenshots/Week-02-screenshot-33.png)
 
 ---
 
@@ -89,7 +89,7 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 Paste your forked repository URL here:
 
-`__________________________`
+https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_dmibypravinmishra-agenticai-claudecode-activity-7482420418860126208-MEzi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ
 ---
 
 # Completion Checklist

@@ -40,7 +40,7 @@ Teach Claude three specific facts about the project and instruct it to save them
 
 #### Screenshot 3 — The `MEMORY.md` file open in VS Code showing the saved content
 
-![Week 02 Screenshots]()
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-43.png)
 
 ---
 
@@ -54,7 +54,7 @@ Terminate the current Claude Code session and restart it to ensure memory is the
 
 #### Screenshot 4 — VS Code reopened with a fresh Claude Code session showing no previous conversation
 
-Add your screenshot here.
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-44.png)
 
 ---
 
@@ -68,13 +68,13 @@ Run three tests that prove Claude remembers what you told it — without you say
 
 #### Screenshot 5 — Claude recalling hero section colors
 
-Add your screenshot here.
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-45.png)
 
 ---
 
 #### Screenshot 6 — Claude refusing JavaScript request based on memory rule
 
-Add your screenshot here.
+![Week 02 Screenshots](Screenshots/Week-02-screenshot-46.png)
 
 ---
 
@@ -91,7 +91,7 @@ Add your screenshot here.
 
 Paste your Linkedin post link here:
 
-`__________________________`
+https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_another-milestone-completed-in-my-devops-share-7482799937781673984-0O1z/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ
 
 ---
 
@@ -99,7 +99,7 @@ Paste your Linkedin post link here:
 
 Paste your forked repository URL here:
 
-`__________________________`
+https://github.com/PricelessMercy1/Ultimate-Agentic-DevOps-with-Claude-Code
 
 ---
 

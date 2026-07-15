@@ -73,13 +73,13 @@ Trigger the security auditor agent and analyze the generated security report for
 
 #### Screenshot 4 — The delegation message showing Claude launched the security-auditor
 
-![Week 02 Screenshot](Screenshots/Week-02-screenshot-20.png)
+![Week 02 Screenshot](Screenshots/Week-02-screenshot-34.png)
 
 ---
 
 #### Screenshot 5 — Security audit report output
 
-![Week 02 Screenshot](Screenshots/Week-02-screenshot-21-2.png)
+![Week 02 Screenshot](Screenshots/Week-02-screenshot-34-1.png)
 ---
 
 # Task 4 — Run the Cost Optimizer
@@ -92,7 +92,7 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 #### Screenshot 6 — The full cost optimization report
 
-![Week 02 Screenshot](Screenshots/Week-02-screenshot-22.png)
+![Week 02 Screenshot](Screenshots/Week-02-screenshot-35.png)
 
 ---
 
