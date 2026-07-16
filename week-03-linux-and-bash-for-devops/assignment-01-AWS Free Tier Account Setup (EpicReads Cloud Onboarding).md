@@ -20,19 +20,21 @@ Demonstrate understanding of AWS basics and Free Tier usage by answering the fol
 
 #### Question 1 — What is an AWS account, and why do you need it at this stage?
 
-Write your answer here.
+An AWS account is a personal account that gives you access to Amazon Web Services, including computing, storage, networking, and security services. At this stage, it is needed to create and manage cloud resources, practice real DevOps tasks, and gain hands-on experience with AWS tools used in production environments.
 
 ---
 
 #### Question 2 — What is AWS Free Tier, and how long does it last?
 
-Write your answer here.
+AWS Free Tier allows new users to explore and use selected AWS services at no cost within specified monthly limits. Most Free Tier offers are available for 12 months after creating a new AWS account, while some services remain free indefinitely and others are offered as short-term free trials.
 
 ---
 
 #### Question 3 — Name three AWS Free Tier services and their free usage limits.
 
-Write your answer here.
+Amazon EC2: Up to 750 hours per month of eligible t2.micro or t3.micro instances (depending on region) for 12 months.
+Amazon S3: Up to 5 GB of Standard storage, along with limited requests and data transfer under the Free Tier.
+Amazon RDS: Up to 750 hours per month of a db.t3.micro (or eligible equivalent), plus 20 GB of database storage for 12 months.
 
 ---
 
@@ -56,8 +58,7 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 #### Screenshot 1 — AWS Account page showing account name (email may be blurred)
 
-Add your screenshot here.
-
+![Week 03 Screenshots](screenshots/Week-03-screenshot-01.png)
 ---
 
 # Submission Instructions
