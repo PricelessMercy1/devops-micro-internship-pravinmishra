@@ -20,7 +20,7 @@ Install Node.js and npm on the Ubuntu VM and verify the installation.
 
 #### Screenshot 1 — Output of `node -v && npm -v` showing installed versions
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-02.png)
 
 ---
 
@@ -34,7 +34,7 @@ Install Nginx, start the service, and confirm it is running.
 
 #### Screenshot 2 — Output of `systemctl status nginx --no-pager` showing Active (running)
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-03.png)
 
 ---
 
