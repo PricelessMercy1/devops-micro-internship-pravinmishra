@@ -18,7 +18,7 @@
 | **LinkedIn** | https://www.linkedin.com/in/aanuoluwapo-mary-tolu-omodara-5582281a1?utm_source=share_via&utm_content=profile&utm_medium=member_android |
 | **Location** | Lagos, Nigeria |
 | **Background** | Banking Operations, Funds Transfer and Reconciliation |
-| **Goal** | Transition from finance and operations into a tech career, gaining real, hands-on DevOps skills from the ground up. I want to use this programme to pivot confidently into tech and open new career possibilities beyond banking and operations. |
+| **Goal** | Transitioning from finance and operations into a tech career, gaining real, hands-on DevOps skills from the ground up. I want to use this programme to pivot confidently into tech and open new career possibilities beyond banking and operations. |
 
 ---
 
@@ -128,10 +128,10 @@ Week 03 → Linux & Bash for DevOps
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_devops-micro-internship-dmi-by-pravin-activity-7439306309772095488-jsnZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_devops-dmi-devopsmicrointernship-activity-7476660358540345344-3JJe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ |
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_insightsandaccountability-growth-learninganddevelopment-share-7478463590346448897-Tml6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_what-my-version-20-looks-like-by-the-time-share-7478453725913739267-4_KT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_another-milestone-completed-in-my-devops-share-7482799937781673984-0O1z/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ |https://medium.com/@aanuoluwapomaryoluwadele/reflection-week-2-bb81d591656a|https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_dmibypravinmishra-agenticai-claudecode-share-7483083206540468225-4NjN/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ|https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_dmibypravinmishra-agenticai-claudecode-share-7482420415479492608-UdmT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ|
-| 03 | Linux & Bash for DevOps | 🔄 In Progress | ⏳ Pending | — | — |
+| 03 | Linux & Bash for DevOps | 🔄 In Progress | ⏳ Pending | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_dmibypravinmishra-agenticai-claudecode-activity-7484032604564856832-yZoZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
