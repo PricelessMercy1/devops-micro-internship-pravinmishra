@@ -152,6 +152,7 @@ Week 03 → Linux & Bash for DevOps
 
 *Awarded upon completing Week 13 — Final Project.*
 
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)
 [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
 <[![Week 02 – Agentic AI with Claude Code](./badges/week-02.svg)](./week-02-agentic-ai/)
 
