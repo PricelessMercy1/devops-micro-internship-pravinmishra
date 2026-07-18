@@ -250,19 +250,19 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-30.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-31.png)
 
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-32.png)
 
 ---
 
@@ -272,19 +272,19 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-Write your answer here.
+The configuration failure was caused by removing the semicolon from the try_files $uri /index.html; directive in the Nginx configuration file. Since Nginx requires each directive to end with a semicolon, the parser detected a syntax error and sudo nginx -t failed, preventing the configuration from being applied.
 
 ---
 
 **2. How did you fix the issue?**
 
-Write your answer here.
+I reopened the Nginx configuration file and restored the missing semicolon to the try_files directive. I then ran sudo nginx -t again to verify that the configuration syntax was valid. After the test passed successfully, I restarted the Nginx service with sudo systemctl restart nginx and confirmed the application was accessible by sending a curl -I request, which returned HTTP/1.1 200 OK
 
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
 
-Write your answer here.
+This type of issue can be avoided by always validating the Nginx configuration with sudo nginx -t before restarting or reloading the service. Configuration files should be stored in version control so changes can be reviewed and reverted if necessary. Changes should also be tested in a staging environment before reaching production, and automated validation should be included in CI/CD pipelines to catch syntax errors before deployment.
 
 ---
 
@@ -298,13 +298,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-33.png)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-34.png)
 
 ---
 
@@ -314,19 +314,19 @@ Answer the following in your own words:
 
 **1. What caused the application to break in this scenario?**
 
-Write your answer here
+The application broke because the web root directory (/var/www/html) was replaced with an empty directory. Although Nginx was still running and correctly configured, the React application files, including index.html, were no longer available. As a result, Nginx could not serve the application and returned an error to users.
 
 ---
 
 **2. How did you fix the issue and restore the application?**
 
-Write your answer here.
+I restored the application by removing the empty web directory and moving the backup directory back to /var/www/html. After restoring the original files, I restarted the Nginx service and verified the recovery using curl -I, which returned HTTP/1.1 200 OK, confirming that the application was working normally again.
 
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
-Write your answer here.
+To prevent this type of issue in production, I would always create a backup before deployment and maintain a tested rollback plan. I would use a CI/CD pipeline to automate deployments, validate that all required application files exist before switching to the new release, and perform post-deployment health checks. I would also use versioned deployments or atomic releases so that if a deployment fails, the previous working version can be restored immediately without affecting users.
 
 ---
 
@@ -342,31 +342,31 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
+SSH key-based authentication is more secure because it uses a cryptographic key pair instead of a password that can be guessed or stolen. The private key stays on the user's device and is never sent over the network, making it much harder for attackers to gain unauthorized access. It also reduces the risk of brute-force and password-based attacks.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
+Only the ports needed by the application should be open because every open port increases the server's attack surface. Closing unnecessary ports reduces the chances of unauthorized access, network attacks, and exploitation of unused services. This follows the principle of least exposure and improves overall security.
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
+Enabling Nginx on boot ensures the web server starts automatically whenever the server restarts, whether due to maintenance, updates, or an unexpected reboot. This minimizes downtime and ensures the application becomes available again without requiring manual intervention.
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
+Sharing secrets, private keys, API tokens, or credentials publicly can allow unauthorized users to access servers, cloud resources, or sensitive data. This can lead to data breaches, service disruption, financial loss, or unauthorized use of cloud resources. Sensitive credentials should always be stored securely and never committed to public repositories.
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
+Unused cloud resources should be stopped or terminated to avoid unnecessary costs and reduce security risks. Running resources that are no longer required continue to consume billable services and may become targets for attacks if left unmanaged. Cleaning up unused resources is a good operational and cost-management practice.
 
 ---
 
@@ -378,13 +378,13 @@ Write your answer here.
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
+(https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_devops-linux-bash-share-7484243888073863169-NcI5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ)
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-35.png)
 
 ---
 
