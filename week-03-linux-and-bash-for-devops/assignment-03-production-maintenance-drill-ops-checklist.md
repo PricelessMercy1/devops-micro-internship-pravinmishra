@@ -20,25 +20,25 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-13.png)
 
 ---
 
 #### Screenshot 2 — Output of `ip a`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-14.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-15.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-16.png)
 
 ---
 
@@ -48,19 +48,19 @@ Answer the following in your own words:
 
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-Write your answer here.
+The sudo ss -tulpen command shows tcp LISTEN on 0.0.0.0:80 with the nginx process. This proves that Nginx is actively listening on port 80 on all network interfaces, allowing users to access the web application over HTTP.
 
 ---
 
 **2. What proves SSH is active on port 22?**
 
-Write your answer here.
+The sudo ss -tulpen output shows tcp LISTEN on 0.0.0.0:22 with the sshd process. This confirms that the SSH service is running and listening on port 22, allowing secure remote access to the Ubuntu server.
 
 ---
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Write your answer here.
+No. I did not find any unexpected open ports. The server is listening on port 22 (SSH) for secure remote administration and port 80 (HTTP) for serving the React application through Nginx. The remaining ports, such as those used by systemd-resolved (DNS) and chronyd (time synchronization), are bound to the local loopback interface (127.0.0.x) or are system services required for normal operating system functionality. These are not exposed externally, so they do not pose an unexpected security risk.
 
 ---
 
@@ -74,19 +74,19 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-17.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-18.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-19.png)
 
 ---
 
@@ -96,13 +96,13 @@ Answer the following in your own words:
 
 **1. What happens if Nginx fails to restart in production?**
 
-Write your answer here.
+If Nginx fails to restart, it will stop serving web traffic, making the application unavailable to users. Visitors may receive errors such as 502 Bad Gateway, 503 Service Unavailable, or they may be unable to connect to the website, depending on the cause of the failure. This can result in downtime until the issue is identified and resolved.
 
 ---
 
 **2. What's your basic rollback plan?**
 
-Write your answer here.
+My basic rollback plan is to restore the last known working Nginx configuration from a backup or version control, verify the configuration using sudo nginx -t, and then restart or reload the Nginx service. After that, I would confirm the application is accessible by checking the service status, testing the website with curl or a browser, and reviewing the logs to ensure the issue has been resolved.
 
 ---
 
@@ -116,19 +116,19 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-20.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-21.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-22.png)
 
 ---
 
@@ -141,19 +141,19 @@ Answer the following in your own words:
 - If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
 - If no, explain what it means if the error log is empty or shows no recent errors during your check.
 
-Write your answer here.
+No, There were no recent error entries in the Nginx error log. The only message recorded was a notice stating that Nginx was using inherited sockets during a graceful restart. This is an informational message that indicates the service reloaded successfully without interrupting active connections, rather than an actual error.
 
 ---
 
 **2. If there were no errors, what does that indicate about the system?**
 
-Write your answer here.
+The absence of recent errors indicates that Nginx is operating normally and serving requests without internal failures or configuration issues. Combined with the successful service restarts shown in the systemd journal and the successful HTTP responses in the access log, it confirms that the web server is stable and functioning as expected.
 
 ---
 
 **3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
 
-Write your answer here.
+Yes. My curl requests appeared in the access log with HTTP 200 OK responses for both the GET and HEAD requests. This confirms that the requests successfully reached the Nginx server, were processed correctly, and the application responded as expected. It also verifies that traffic is flowing properly between the client and the web server.
 
 ---
 
@@ -167,25 +167,25 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-23.png)
 
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-24.png)
 
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-25.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-26.png)
 
 ---
 
@@ -195,13 +195,12 @@ Answer the following in your own words:
 
 **1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
 
-Write your answer here.
-
+None of the monitored resources appear to be under critical pressure at the moment. The CPU load averages are 0.00, indicating the server is not under processing stress. Memory usage is healthy, with 556 MiB of available RAM and no signs of memory pressure. The root filesystem is 59% utilized, leaving 2.8 GiB of free space. If I had to identify the resource that deserves the closest ongoing monitoring, it would be disk usage, because logs, application data, and package caches can grow gradually over time and eventually lead to service disruptions if storage is not managed proactively.
 ---
 
 **2. What happens if disk becomes 100% full in a production server?**
 
-Write your answer here.
+If the disk reaches 100% capacity, applications may fail because they can no longer write files or create temporary data. System and application logs may stop recording new events, making troubleshooting much more difficult during an incident. Package installations and updates can fail, databases may refuse write operations or become unstable, and in severe cases even administrative tasks such as logging in through SSH may be affected. Monitoring disk usage and cleaning up unnecessary files before the disk becomes full is an important part of production operations.
 
 ---
 
@@ -215,19 +214,19 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-27.png)
 
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-28.png)
 
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
 
-Add your screenshot here.
+![Week 03 Screenshots](screenshots/Week-03-screenshot-29.png)
 
 ---
 
@@ -237,7 +236,7 @@ Answer the following in your own words:
 
 **1. How do you confirm that the correct version of the application is deployed?**
 
-Write your answer here.
+Deployment correctness was verified through several checks. First, ls -lah /var/www/html confirmed that the expected React production build files, including index.html, the static directory, manifest.json, and other assets, are present in Nginx's web root. Next, searching for the custom deployment text (for example, "Deployed by") confirms that the expected application build was deployed rather than an older version. Finally, grep -n "try_files" /etc/nginx/sites-available/default verified that Nginx is configured with the correct try_files $uri /index.html; directive, ensuring React's client-side routing works correctly. Combined with the successful HTTP 200 OK responses from the earlier curl tests, these checks confirm that the correct React application is deployed and being served properly.
 
 ---
 
