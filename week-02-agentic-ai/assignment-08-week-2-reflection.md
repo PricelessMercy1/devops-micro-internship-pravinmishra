@@ -54,7 +54,7 @@ You can publish your blog on:
 
 Blog Link:
 
-https://medium.com/@aanuoluwapomaryoluwadele/reflection-week-2-bb81d591656a
+`Add your URL here`
 
 ---
 
@@ -78,7 +78,7 @@ Your post must include:
 
 ### Required P.S. Line (Must Include Exactly)
 
-> **P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining [DMI waiting list](https://forms.gle/3hvrWJBDzsDeJoPs6) (https://forms.gle/3hvrWJBDzsDeJoPs6).**
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
 
 ---
 
@@ -121,7 +121,7 @@ P.S. This post is part of the DevOps Micro Internship with Agentic AI Cohort 3 b
 
 ### LinkedIn Post Link:
 
-https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_dmibypravinmishra-agenticai-claudecode-share-7483083206540468225-4NjN/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ
+`__________________________________________`
 
 ---
 

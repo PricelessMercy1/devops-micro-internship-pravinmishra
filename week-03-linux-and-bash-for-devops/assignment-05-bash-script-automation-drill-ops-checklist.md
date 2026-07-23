@@ -417,7 +417,7 @@ This script combines several Bash concepts into one program. It uses variables t
 
 Paste your LinkedIn post URL here:
 
-https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_devops-linux-bash-share-7485312615691366400-nMR5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ
+`Add your URL here`
 
 ---
 

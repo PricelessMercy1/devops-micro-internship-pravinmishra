@@ -91,7 +91,7 @@ Run three tests that prove Claude remembers what you told it — without you say
 
 Paste your Linkedin post link here:
 
-https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_another-milestone-completed-in-my-devops-share-7482799937781673984-0O1z/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ
+`Add your URL here`
 
 ---
 
@@ -99,7 +99,7 @@ https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_another-m
 
 Paste your forked repository URL here:
 
-https://github.com/PricelessMercy1/Ultimate-Agentic-DevOps-with-Claude-Code
+`__________________________`
 
 ---
 
