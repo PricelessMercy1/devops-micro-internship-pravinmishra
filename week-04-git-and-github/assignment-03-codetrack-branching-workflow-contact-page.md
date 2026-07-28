@@ -54,13 +54,13 @@ Create `contact.html` with the provided content and commit it alone using the me
 
 #### Screenshot 4 — Output of `git commit`
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-26.png)
 
 ---
 
 #### Screenshot 5 — Output of `git log --oneline -3` showing the new commit
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-27.png)
 
 ---
 
@@ -74,19 +74,19 @@ Add the provided Contact Page link to `index.html` and commit it separately usin
 
 #### Screenshot 6 — Output of `git status` showing `index.html` as modified before staging
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-28.png)
 
 ---
 
 #### Screenshot 7 — Output of `git commit`
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-29.png)
 
 ---
 
 #### Screenshot 8 — Browser showing the Contact Page link on the homepage while on `feature/contact-page`
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-30.png)
 
 ---
 
@@ -100,13 +100,13 @@ Switch back to the default branch and confirm that `contact.html` and the Contac
 
 #### Screenshot 9 — Terminal showing the checkout and `ls` output, proving `contact.html` is absent
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-31.png)
 
 ---
 
 #### Screenshot 10 — Browser showing the homepage on the default branch with no Contact Page link
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-32.png)
 
 ---
 
@@ -120,19 +120,19 @@ Merge `feature/contact-page` into your default branch and confirm the Contact pa
 
 #### Screenshot 11 — Output of `git merge feature/contact-page`
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-33.png)
 
 ---
 
 #### Screenshot 12 — Output of `ls` showing `contact.html` after the merge
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-34.png)
 
 ---
 
 #### Screenshot 13 — Browser showing the Contact page opened from the homepage link on the default branch
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-35.png)
 
 ---
 
@@ -146,7 +146,7 @@ Display the repository history as a graph and locate both feature commits.
 
 #### Screenshot 14 — Full output of `git log --oneline --graph --decorate --all`
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-36.png)
 
 ---
 
@@ -160,7 +160,7 @@ Delete the merged `feature/contact-page` branch to keep your branch list clean.
 
 #### Screenshot 15 (Optional) — Output showing `feature/contact-page` deleted and no longer listed
 
-![Week 04 Screenshots](screenshots)
+![Week 04 Screenshots](screenshots/Week-04-screenshots-37.png)
 
 ---
 

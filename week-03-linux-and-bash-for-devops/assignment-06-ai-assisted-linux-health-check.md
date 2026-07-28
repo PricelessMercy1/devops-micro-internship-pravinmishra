@@ -476,8 +476,7 @@ The workflow followed the Agentic AI loop by first gathering system information,
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
-
+https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_devops-linux-bash-share-7485773868452777985-STRT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ
 ---
 
 #### Screenshot — Published LinkedIn post
@@ -489,7 +488,7 @@ Paste your LinkedIn post URL here:
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`__________________________`
+https://github.com/PricelessMercy1/devops-micro-internship-pravinmishra/tree/main/week-03-linux-and-bash-for-devops
 
 ---
 
