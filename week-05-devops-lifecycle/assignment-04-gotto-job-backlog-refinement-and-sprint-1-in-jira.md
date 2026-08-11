@@ -20,7 +20,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 #### Screenshot 1 — Jira "Create project" screen, or the project sidebar after creation
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-36.png)
 
 ---
 
@@ -28,7 +28,12 @@ Add your screenshot here.
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+Mode: Solo Mode — I performed all four Scrum roles for the Sprint.
+
+PO: I prioritized the backlog based on user value, focusing first on UI improvements that would make Gotto Job clearer, easier to discover, and more trustworthy.
+SM: I ensured the Scrum process was followed by timeboxing the work, refining the backlog, planning Sprint 1, tracking progress, and completing the retrospective.
+Dev Lead: I built the selected UI Story by making the required front-end change to the Gotto Job template and validating the result.
+DevOps Lead: I committed the change to Git, deployed the updated files to the EC2/Nginx environment, and verified the change live in the browser.
 
 ---
 
@@ -42,7 +47,7 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-37.png)
 
 ---
 
@@ -56,7 +61,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-38.png)
 
 ---
 
@@ -70,13 +75,13 @@ Create at least six Stories under the Epic, estimate each with 1, 2, or 3 story 
 
 #### Screenshot 4 — Backlog showing the Epic and at least six Stories under it
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-39.png)
 
 ---
 
 #### Screenshot 5 — One Story opened showing its Story Points and acceptance criteria filled in
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-40.png)
 
 ---
 
@@ -90,7 +95,7 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 #### Screenshot 6 — Backlog showing Story Points visible, or two or three Stories opened showing their points
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-41.png)
 
 ---
 
@@ -98,7 +103,33 @@ Add your screenshot here.
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+GJATO-2 — Hero tagline clarity — 1 point
+This is a small UI-only change involving the homepage hero text. I estimated it at 1 point because there is minimal implementation and testing effort.
+
+GJATO-3 — Primary CTA color — 1 point
+This is a straightforward CSS/UI change to the primary button color. I considered whether site-wide button styling might increase the effort, but kept it at 1 point because there is no complex logic involved.
+
+GJATO-4 — Job card typography — 2 points
+This requires adjusting the size and weight of job titles and checking the visual layout. I estimated 2 points because it requires some styling and responsive verification rather than a simple text change.
+
+GJATO-5 — Remote badge (UI-only) — 2 points
+This involves adding and displaying a “REMOTE” badge on relevant job cards. I estimated 2 points because it requires both the UI element and verification of how it appears on the cards.
+
+GJATO-6 — Posted on <date> text — 1 point
+This is a small UI/content change to display a human-readable posted date on job cards. I estimated 1 point because there is no complex functionality involved.
+
+GJATO-7 — Advanced search labels — 2 points
+This requires clarifying multiple search labels and placeholders, followed by checking their alignment and presentation. I estimated 2 points because several UI elements are involved.
+
+GJATO-8 — Job detail Apply Now CTA — 1 point
+This involves adding a prominent “Apply Now” button with a simple link. I estimated 1 point because it is a small, focused UI change without complex functionality.
+
+GJATO-9 — Footer trust links — 1 point
+This involves adding the “About” and “Contact” links to the footer. I estimated 1 point because it is a simple UI/navigation change with limited implementation effort.
+
+Planning Poker / Debate Note
+
+Solo Mode Planning Poker: I reviewed each estimate based on relative implementation effort, UI complexity, and verification required. I challenged the 1-point estimates to confirm that they did not involve hidden complexity, while the 2-point stories were kept higher because they involve multiple UI elements or additional visual verification. The estimates were then confirmed as 1, 1, 2, 2, 1, 2, 1, and 1 points, for a total of 11 story points.
 
 ---
 
@@ -112,13 +143,13 @@ Create Sprint 1, move three or four Stories into it (approximately 3–6 points)
 
 #### Screenshot 7 — Sprint 1 with the selected Stories inside it
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-42.png)
 
 ---
 
 #### Screenshot 8 — One Story showing the Sub-tasks created
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-43.png)
 
 ---
 
@@ -132,7 +163,7 @@ Open the Burndown Chart and confirm it exists for Sprint 1. It is acceptable if 
 
 #### Screenshot 9 — Burndown Chart page opened, even if empty
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-44.png)
 
 ---
 
@@ -146,19 +177,19 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-45.png)
 
 ---
 
 #### Screenshot 11 — Git commit output
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-46.png)
 
 ---
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-47.png)
 
 ---
 
@@ -172,7 +203,7 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-48.png)
 
 ---
 
@@ -188,13 +219,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_devops-devopsinternship-aws-share-7492914571674980352-l8Xm/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
+![Week 05 Screenshots](screenshots/week-05-screenshots-49.png)
 
 ---
 
