@@ -1,0 +1,1 @@
+- [CloudFront PriceClass Optimization](cloudfront-priceclass-analysis.md) — Portfolio site can reduce from PriceClass_200 to PriceClass_100 for ~50% tier savings (~$20-30/mo)

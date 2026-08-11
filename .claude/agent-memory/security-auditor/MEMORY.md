@@ -1,0 +1,2 @@
+- [Terraform scope: no IAM/OIDC resources in repo](project_terraform_scope.md) — don't flag IAM/OIDC checklist items until those resources/workflows exist
+- [Known terraform gaps as of 2026-07-10 audit](project_terraform_known_gaps.md) — encryption/versioning/logging/security-headers/.gitignore gaps to re-check each audit
