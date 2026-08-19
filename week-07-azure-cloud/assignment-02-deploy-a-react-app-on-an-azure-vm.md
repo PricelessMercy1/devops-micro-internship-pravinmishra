@@ -20,7 +20,7 @@ Create the Azure Resource Group `react-app-rg` in a region close to you.
 
 #### Screenshot 1 — Resource Group overview showing the name and region
 
-Add your screenshot here.
+![Week 06 Screenshots](screenshots)
 
 ---
 
@@ -34,7 +34,7 @@ Create an Ubuntu 20.04 LTS VM (size B1s) with a Network Security Group allowing 
 
 #### Screenshot 2 — Azure VM overview page showing the VM name, Resource Group, and region
 
-Add your screenshot here.
+![Week 06 Screenshots](screenshots)
 
 ---
 
