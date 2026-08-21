@@ -58,7 +58,7 @@ Confirm the NGINX default page is reachable through the Load Balancer's public I
 
 #### Screenshot 3 — Browser showing the NGINX welcome page through the Load Balancer Public IP
 
-![Week 06 Screenshots](screenshots)
+![Week 06 Screenshots](screenshots/week-07-screenshots-15.png)
 
 ---
 
