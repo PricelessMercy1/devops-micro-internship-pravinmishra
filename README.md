@@ -135,7 +135,7 @@ Week 07 → Azure Cloud
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_devops-git-github-share-7486452178052730880-WHPF/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ |https://medium.com/@aanuoluwapomaryoluwadele/i-thought-the-ai-would-catch-everything-a8214b72b6a8 |
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_devops-aws-linux-share-7491531383341920256-f3Ri/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ | https://medium.com/@aanuoluwapomaryoluwadele/a-jira-ticket-became-a-live-website-1cb80267da09 |
 | 06 | AWS Cloud | 🔄 In Progress | 🔄 In Progress| — | — |
-| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | https://lnkd.in/p/eJ6MnHqq | — |
+| 07 | Azure Cloud | ✅ Completed | ✅ Solved | https://lnkd.in/p/eJ6MnHqq | https://lnkd.in/p/eD7esetE |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |

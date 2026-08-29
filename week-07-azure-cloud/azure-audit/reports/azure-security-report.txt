@@ -1,0 +1,22 @@
+========================================
+Azure Security Posture Audit Report
+========================================
+Full Name: Aanuoluwapo Tolu-Omodara
+Timestamp: 2026-08-29T12:22:12Z
+Resource Group: Book-Review-RG
+VM: Book-Review-Web-VM
+Storage Account: bookreviewauditsa
+MySQL Server: book-review-db
+
+[PASS] No NSG rule allows unrestricted inbound SSH or RDP access
+[PASS] Storage Account blob public access is disabled
+[PASS] VM OS managed disk is encrypted at rest (EncryptionAtRestWithPlatformKey)
+[PASS] Azure Database for MySQL public network access is disabled
+
+Summary:
+PASS: 4
+WARN: 0
+FAIL: 0
+Overall Status: HEALTHY
+Script Exit Code: 0
+Report File: /c/Users/user/Downloads/devops-micro-internship-pravinmishra/week-07-azure-cloud/azure-audit/reports/azure-security-report.txt
