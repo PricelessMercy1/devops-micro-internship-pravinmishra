@@ -20,13 +20,13 @@ Create an architecture diagram and implementation plan identifying the presentat
 
 #### Screenshot 1 — Architecture diagram showing the public entry point, three tiers, network boundaries, and traffic flow
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-30.png)
 
 ---
 
 #### Screenshot 2 — Written architecture assumptions and selected Azure services
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-31.png)
 
 ---
 
@@ -40,19 +40,19 @@ Create a dedicated Resource Group and VNet with separate subnets for the web, ap
 
 #### Screenshot 3 — Resource Group overview showing the assignment resources
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-32.png)
 
 ---
 
 #### Screenshot 4 — VNet overview showing the address space and all required subnets
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-33.png)
 
 ---
 
 #### Screenshot 5 — Route-table or Private DNS evidence where applicable
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-34.png)
 
 ---
 
@@ -66,13 +66,13 @@ Apply least-privilege NSG rules so traffic flows Internet → public entry point
 
 #### Screenshot 6 — NSG rules proving least-privilege access between the tiers
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-35.png)
 
 ---
 
 #### Screenshot 7 — Key Vault or approved secret-management configuration (without displaying secret values)
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-36.png)
 
 ---
 
@@ -86,13 +86,13 @@ Deploy the Book Review App presentation layer on the approved web-tier compute s
 
 #### Screenshot 8 — Web-tier compute overview showing subnet and availability configuration
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-37.png)
 
 ---
 
 #### Screenshot 9 — Terminal or service output proving the presentation layer is running
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-38.png)
 
 ---
 
@@ -106,20 +106,19 @@ Deploy the Book Review App backend privately in the application subnet, configur
 
 #### Screenshot 10 — Application-tier compute overview showing private subnet placement
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-39.png)
 
 ---
 
 #### Screenshot 11 — Backend process, service, or listening-port evidence
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-40.png)
 
 ---
 
 #### Screenshot 12 — Internal health-check or API response (without exposing secrets)
 
-Add your screenshot here.
-
+![Week 07 Screenshots](screenshots/week-07-screenshots-41.png)
 ---
 
 # Task 6 — Deploy the Managed Database Tier
@@ -132,19 +131,19 @@ Create a private Azure managed database (public access disabled), with availabil
 
 #### Screenshot 13 — Database overview showing private connectivity and public access disabled
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-42.png)
 
 ---
 
 #### Screenshot 14 — Availability, backup, and retention configuration
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-43.png)
 
 ---
 
 #### Screenshot 15 — Successful schema or connectivity verification (without exposing credentials)
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-44.png)
 
 ---
 
@@ -158,19 +157,19 @@ Configure the approved public entry service with health probes and backend pools
 
 #### Screenshot 16 — Public entry service showing listener, frontend endpoint, and healthy web targets
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-45.png)
 
 ---
 
 #### Screenshot 17 — Internal application-tier load-balancing or routing configuration where applicable
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-46.png)
 
 ---
 
 #### Screenshot 18 — Azure Monitor, diagnostic settings, logs, metrics, or alert evidence
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-47.png)
 
 ---
 
@@ -184,25 +183,25 @@ Confirm the Book Review App works end to end through the public endpoint, with a
 
 #### Screenshot 19 — Browser showing the Book Review App through the public endpoint
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-48.png)
 
 ---
 
 #### Screenshot 20 — Proof of successful database-backed read and write operations
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-49.png)
 
 ---
 
 #### Screenshot 21 — Evidence that private tiers are not publicly accessible
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-50.png)
 
 ---
 
 #### Screenshot 22 — Availability-test and healthy-target evidence
 
-Add your screenshot here.
+![Week 07 Screenshots](screenshots/week-07-screenshots-51.png)
 
 ---
 
@@ -210,7 +209,7 @@ Add your screenshot here.
 
 Paste your public endpoint URL here:
 
-`Add your URL here`
+http://40.127.6.205
 
 ---
 
@@ -218,7 +217,29 @@ Paste your public endpoint URL here:
 
 Summarize what worked, issues encountered and how they were fixed, and the availability/security/secrets/monitoring/backup choices made.
 
-Write your answer here.
+What worked
+
+The whole three-tier setup came together — VNet with separate subnets for web, app, and database, NSGs locking down what can talk to what, a Public Load Balancer in front of the Web VM and an Internal LB in front of the App VM, and MySQL Flexible Server sitting privately in the VNet. Nginx on the Web VM handles the reverse proxy, so the App tier and database are never exposed to the internet. Both the backend and frontend run under PM2 so they'll survive a reboot. I tested the whole path end to end — reading the books list and registering a new user — and both worked through the public IP.
+
+Issues I ran into
+
+The NAT Gateway needed a "Standard V2" public IP, not "Standard" — Azure's changed this since the walkthrough was recorded.
+The homepage was getting a 404 on /api/api/books — turned out the frontend code was already adding /api/ itself, so my env variable was doubling it up. Fixed by leaving the variable empty and rebuilding.
+Registration kept failing silently because a different file in the frontend used a different convention for building the API URL, so it was still trying to hit localhost:3001 instead of going through Nginx. Had to fix that file separately so both parts of the app agreed on the same URL pattern.
+My home internet's IP kept changing, which quietly broke SSH each time since the NSG rule only allows one specific IP. Had to update it a couple of times mid-project.
+First time I ran the backend, it failed because the database book_review_db didn't actually exist inside the MySQL server yet — had to create it manually before anything else would work.
+PM2 isn't shared across VMs, so I had to install it separately on each one.
+
+Choices I made
+
+Availability: Both load balancers use health probes, and the Public LB is currently showing 100% healthy instances.
+Security: Only the Web VM is public. I confirmed the App VM and database can't be reached from outside Azure at all — the App VM times out and the database's hostname doesn't even resolve outside the VNet.
+Secrets: DB credentials and the JWT secret live in a .env file on the App VM, not in the repo. I also set up a Key Vault for secret storage.
+Monitoring: Used Azure's Activity Log to track deployment history, and there's a recorded health event showing Azure's own monitoring picked something up and resolved it.
+Backup: MySQL is set to 7-day automated backups. I didn't turn on high availability since it wasn't needed for this assignment.
+
+
+
 
 ---
 
