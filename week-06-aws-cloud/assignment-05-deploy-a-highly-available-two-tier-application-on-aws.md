@@ -143,7 +143,7 @@ Create an Auto Scaling Group from the Launch Template across both public subnets
 
 #### Screenshot 15 — Auto Scaling Group showing desired, minimum, and maximum capacity and the selected subnet Availability Zones
 
-![Week 06 Screenshots](screenshots)
+![Week 06 Screenshots](screenshots/week-06-screenshots-45.png)
 
 ---
 
