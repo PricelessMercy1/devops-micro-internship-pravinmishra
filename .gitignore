@@ -5,3 +5,5 @@ CLAUDE.md
 *.tfstate
 *.tfstate.backup
 skus.json
+terraform.tfvars
+*.pem

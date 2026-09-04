@@ -136,7 +136,7 @@ Week 08 → Terraform
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/aanuoluwapo-mary-tolu-omodara-5582281a1_devops-aws-linux-share-7491531383341920256-f3Ri/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8ygxQBxWfO17Lhd_0x2mvEFqlpxYuWQTQ | https://medium.com/@aanuoluwapomaryoluwadele/a-jira-ticket-became-a-live-website-1cb80267da09 |
 | 06 | AWS Cloud | 🔄 In Progress | 🔄 In Progress| — | — |
 | 07 | Azure Cloud | ✅ Completed | ✅ Solved | https://lnkd.in/p/eJ6MnHqq | https://lnkd.in/p/eD7esetE |
-| 08 | Terraform | 🔄 In Progress | 🔄 In Progress | — | — |
+| 08 | Terraform | 🔄 In Progress | 🔄 In Progress | https://lnkd.in/p/etnqRDnh | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
