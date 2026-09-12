@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "mcp__terraform__*",
+      "Read",
+      "Grep",
+      "Glob",
+      "Bash(terraform init)",
+      "Bash(terraform init *)",
+      "Bash(terraform fmt)",
+      "Bash(terraform fmt *)",
+      "Bash(terraform validate)",
+      "Bash(terraform validate *)",
+      "Bash(terraform plan)",
+      "Bash(terraform plan *)",
+      "Bash(terraform show)",
+      "Bash(terraform show *)",
+      "Bash(terraform output)",
+      "Bash(terraform output *)"
+    ],
+    "ask": [
+      "Bash(terraform apply *)",
+      "Bash(terraform apply)",
+      "Bash(terraform destroy *)",
+      "Bash(terraform destroy)"
+    ],
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Read(**/*.tfstate)",
+      "Read(**/*.tfstate.*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "terraform",
+            "args": [
+              "-chdir=${CLAUDE_PROJECT_DIR}/terraform",
+              "fmt",
+              "-recursive"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

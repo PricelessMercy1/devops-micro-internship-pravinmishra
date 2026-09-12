@@ -6,10 +6,10 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Student Details
 
-**Full Name:** Add your full name here  
-**Cloud Platform:** AWS or Azure  
-**GitHub Repository URL:** Add your repository URL here  
-**Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
+**Full Name:** Aanuoluwapo Tolu-Omodara 
+**Cloud Platform:** AWS or Azure : AWS
+**GitHub Repository URL:** https://github.com/PricelessMercy1/devops-micro-internship-pravinmishra/  
+**Public Application URL / Load-Balancer DNS:** http://book-review-public-alb-1986168851.eu-north-1.elb.amazonaws.com/book/1
 
 ---
 
@@ -31,7 +31,7 @@ Prepare the Book Review App project and configure the provided Claude Code Agent
 
 Add a screenshot of the project `CLAUDE.md` showing the three-tier architecture, security boundaries, Terraform requirements, and human-approval rules.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-70.png)
 
 ---
 
@@ -39,7 +39,8 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform Engineer subagent configuration.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-71.png)
+
 
 ---
 
@@ -47,7 +48,8 @@ Add your screenshot here.
 
 Add a screenshot showing the Architecture and Security Reviewer subagent configuration.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-72.png)
+
 
 ---
 
@@ -55,7 +57,8 @@ Add your screenshot here.
 
 Add a screenshot showing Terraform MCP connected and available.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-73.png)
+
 
 ---
 
@@ -63,7 +66,8 @@ Add your screenshot here.
 
 Add a screenshot showing the configured Claude Code validation hooks.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-74.png)
+
 
 ---
 
@@ -90,7 +94,7 @@ The diagram must show:
 
 ## Architecture Diagram
 
-Add the completed architecture diagram here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-75.png)
 
 ---
 
@@ -106,7 +110,8 @@ Create the modular Terraform project and implement the network and security laye
 
 Add a screenshot showing the modular Terraform project structure.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-76.png)
+
 
 ---
 
@@ -114,7 +119,8 @@ Add your screenshot here.
 
 Add a screenshot showing the six-subnet architecture across two availability locations.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-77.png)
+
 
 ---
 
@@ -122,7 +128,8 @@ Add your screenshot here.
 
 Add a screenshot showing the public and private tier separation, including routing and security boundaries.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-78.png)
+
 
 ---
 
@@ -138,7 +145,8 @@ Deploy the public and internal load balancers and the Web and Application comput
 
 Add a screenshot showing the Web and Application compute resources in their required subnets.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-79.png)
+
 
 ---
 
@@ -146,7 +154,8 @@ Add your screenshot here.
 
 Add a screenshot showing the internet-facing public load balancer.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-80.png)
+
 
 ---
 
@@ -154,7 +163,8 @@ Add your screenshot here.
 
 Add a screenshot showing the private internal load balancer.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-81.png)
+.
 
 ---
 
@@ -162,7 +172,8 @@ Add your screenshot here.
 
 Add a screenshot showing healthy target groups or backend pools.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-82.png)
+
 
 ---
 
@@ -178,7 +189,8 @@ Deploy a private, highly available managed MySQL database with a read replica an
 
 Add a screenshot showing the managed MySQL database deployment.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-83.png)
+
 
 ---
 
@@ -186,7 +198,8 @@ Add your screenshot here.
 
 Add a screenshot showing the Multi-AZ or high-availability configuration.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-84.png)
+
 
 ---
 
@@ -194,7 +207,8 @@ Add your screenshot here.
 
 Add a screenshot showing the read replica configuration.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-85.png)
+
 
 ---
 
@@ -202,7 +216,8 @@ Add your screenshot here.
 
 Add a screenshot showing that the database is private and accepts MySQL traffic only from the Application Tier.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-86.png)
+
 
 ---
 
@@ -218,7 +233,8 @@ Validate the Terraform configuration, review the execution plan using both Agent
 
 Add a screenshot showing successful `terraform validate` output.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-87.png)
+
 
 ---
 
@@ -226,7 +242,8 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform plan output.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-88.png)
+
 
 ---
 
@@ -234,7 +251,8 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-89.png)
+
 
 ---
 
@@ -250,7 +268,8 @@ Deploy and configure the Book Review App across the Web, Application, and Databa
 
 Add a screenshot showing the Book Review App homepage through the public endpoint.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-90.png)
+
 
 ---
 
@@ -258,7 +277,8 @@ Add your screenshot here.
 
 Add a screenshot showing successful login or authentication.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-91.png)
+
 
 ---
 
@@ -266,7 +286,8 @@ Add your screenshot here.
 
 Add a screenshot showing the book listing or book details.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-92.png)
+
 
 ---
 
@@ -274,7 +295,8 @@ Add your screenshot here.
 
 Add a screenshot showing the review functionality working successfully.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-93.png)
+
 
 ---
 
@@ -282,7 +304,8 @@ Add your screenshot here.
 
 Add a screenshot showing that the backend or API is working successfully.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-94.png)
+
 
 ---
 
@@ -290,11 +313,12 @@ Add your screenshot here.
 
 Add a screenshot showing successful database reads and writes.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-95.png)
+
 
 ## Public Application URL
 
-**Public Application URL / DNS:** Add the working public application URL or load-balancer DNS here
+http://book-review-public-alb-1986168851.eu-north-1.elb.amazonaws.com
 
 ---
 
@@ -312,7 +336,8 @@ You do not need to submit your complete Claude Code conversation history. Includ
 
 Add a screenshot showing one useful example of AI-assisted Terraform generation or improvement.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-96.png)
+
 
 ---
 
@@ -320,7 +345,8 @@ Add your screenshot here.
 
 Add a screenshot showing one structured architecture or security review result.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-97.png)
+
 
 ---
 
@@ -328,7 +354,8 @@ Add your screenshot here.
 
 Add a screenshot showing one AI-assisted troubleshooting interaction based on collected evidence.
 
-Add your screenshot here.
+![Week 08 Screenshots](screenshots/week-08-screenshot-98.png)
+
 
 ---
 
@@ -367,67 +394,67 @@ Reflect on the architecture, Terraform implementation, and Agentic AI workflow. 
 
 ### 1. Why did you separate the Web, Application, and Database tiers?
 
-Write your answer here.
+I did that to contain the blast radius of any single compromised layer, if the Web tier is breached, the attacker still can't reach the database directly, since only the App tier's security group is allowed to talk to it. It also lets each tier scale and fail independently.
 
 ### 2. Why is the Application Tier private?
 
-Write your answer here.
+It has no reason to be reachable from the internet, all its traffic should arrive through the internal load balancer, from the Web tier only. Keeping it private with no public IP removes an entire attack surface.
 
 ### 3. Why is MySQL private?
 
-Write your answer here.
+Database credentials and data are the highest-value target in the stack. Restricting inbound 3306 to only the App tier's security group, with no internet route on the DB subnets at all, means even a fully public misconfiguration elsewhere couldn't expose the database directly.
 
 ### 4. Why are multiple Availability Zones used?
 
-Write your answer here.
+A single AZ is a single point of failure, if it goes down, everything in it goes down. Spreading instances, load balancers, and the database across two AZs means the app can survive a full AZ outage.
 
 ### 5. What is the difference between Multi-AZ/high availability and a read replica?
 
-Write your answer here.
+Multi-AZ is a synchronous standby purely for failover — it's not queryable, and exists only to take over automatically if the primary fails. A read replica is a separate, queryable instance used to offload read traffic from the primary; it can lag slightly behind since replication is asynchronous.
 
 ## Terraform
 
 ### 6. How did you divide your Terraform into modules?
 
-Write your answer here.
+I divided them into network, security, load-balancer, database, and compute, each owning one architectural layer, so changes to one (e.g. adding a new security rule) don't require touching unrelated resources.
 
 ### 7. How do the modules communicate through variables and outputs?
 
-Write your answer here.
+Each module exposes IDs it creates (subnet IDs, security group IDs, VPC ID) as outputs; the root module wires those outputs into the next module's input variables — e.g. the security module's web_sg_id output feeds into the compute module's security group input.
 
 ### 8. What did you specifically check in `terraform plan`?
 
-Write your answer here.
+I checked the exact count and type of resources being added/changed/destroyed, especially confirming zero unintended destroys before any apply; for the security group fix specifically, I checked that only one resource (the new egress rule) was being added and that the referenced security group IDs matched exactly.
 
 ## Agentic AI
 
 ### 9. What was the purpose of `CLAUDE.md`?
 
-Write your answer here.
+It gave Claude Code persistent project context, the required architecture, security boundaries, and the rule that Claude should never run terraform apply/destroy itself — so every subagent invocation stayed consistent with the plan instead of improvising.
 
 ### 10. What work did the Terraform Engineer subagent perform?
 
-Write your answer here.
+It generated the actual .tf resource definitions across all five modules, following the architecture from CLAUDE.md and the modern security-group-rule resource style.
 
 ### 11. What did the Architecture and Security Reviewer identify?
 
-Write your answer here.
+It I dentified the security groups with layered rules and made sure the Database tier was completely protected from external access
 
 ### 12. Why did you use Terraform MCP instead of relying only on Claude's existing Terraform knowledge?
 
-Write your answer here.
+To ensure the generated resources matched the AWS provider's current documented syntax and best practices rather than potentially outdated patterns from training data — this matters especially for things like the newer separate aws_vpc_security_group_egress_rule resources versus the older inline/rule-resource patterns.
 
 ### 13. What was the purpose of your validation hooks?
 
-Write your answer here.
+To enforce deterministic checks (like terraform fmt and validate) automatically rather than relying on remembering to run them manually before every apply.
 
 ### 14. Describe one real issue Claude helped you troubleshoot.
 
-Write your answer here.
+SSH from the Web tier to the App tier was timing out during deployment. Claude helped diagnose it as a security-group issue rather than a credentials problem by checking outbound rules on web-sg, discovered port 22 egress was missing, and after adding it we hit a terraform import situation when Terraform tried to duplicate a manually-added Console rule — resolved by importing the existing rule into state instead.
 
 ### 15. Describe one recommendation you reviewed, modified, or rejected instead of accepting blindly.
 
-Write your answer here.
+The terraform-engineer subagent suggested running terraform apply -auto-approve when giving manual commands to run — I corrected this every time to plain terraform apply, since -auto-approve skips Terraform's own confirmation prompt, and the project required human approval before every infrastructure change.
 
 ---
 
@@ -441,7 +468,7 @@ Write the post in your own words, include at least one project image or other pr
 
 ## LinkedIn Post URL
 
-**LinkedIn Post URL:** Add your LinkedIn post URL here
+**LinkedIn Post URL:** https://lnkd.in/p/e8UrbbtZ
 
 ---
 
