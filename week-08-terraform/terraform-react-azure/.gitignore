@@ -1,0 +1,6 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+!CLAUDE.md
+reports/tfplan.out
+reports/tfplan.json
