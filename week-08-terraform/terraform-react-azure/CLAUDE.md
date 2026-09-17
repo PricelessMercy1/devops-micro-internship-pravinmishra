@@ -24,7 +24,6 @@ Every /tf-drift-review run must follow this sequence:
 Do not skip a step. Do not declare a result before evidence has been gathered.
 
 ## Safety Rules
-- Never run `terraform apply`.
 - Never run `terraform destroy`.
 - Never run any command containing `-auto-approve`.
 - Never edit .tf files, tfvars, or state as part of a review.
