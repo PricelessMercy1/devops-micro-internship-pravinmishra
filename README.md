@@ -94,8 +94,8 @@ Week 07 → Azure Cloud
 Week 08 → Terraform
 [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
 
-<!-- Week 09 → Ansible -->
-<!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
+Week 09 → Ansible
+[![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/)
 
 <!-- Week 10 → Azure DevOps CI/CD -->
 <!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
@@ -137,7 +137,7 @@ Week 08 → Terraform
 | 06 | AWS Cloud | 🔄 In Progress | 🔄 In Progress| — | — |
 | 07 | Azure Cloud | ✅ Completed | ✅ Solved | https://lnkd.in/p/eJ6MnHqq | https://lnkd.in/p/eD7esetE |
 | 08 | Terraform | 🔄 In Progress | 🔄 In Progress | https://lnkd.in/p/etnqRDnh | https://lnkd.in/p/e8UrbbtZ |
-| 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
+| 09 | Ansible | 🔄 In Progress | 🔄 In Progress | https://lnkd.in/p/emWATWw8 | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
@@ -161,6 +161,7 @@ Week 08 → Terraform
 [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/)
 [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/)
 [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
+[![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/)
 
 ---
 
