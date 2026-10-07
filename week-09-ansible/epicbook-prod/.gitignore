@@ -1,0 +1,15 @@
+# Terraform
+*.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Secrets and keys
+*.pem
+id_ed25519*
+ansible/group_vars/*vault*
+
+# Ansible
+*.retry
+ansible/group_vars/all/vault.yml
