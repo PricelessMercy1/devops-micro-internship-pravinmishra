@@ -1,0 +1,78 @@
+
+PLAY [Deploy EpicBook application] *********************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [epicbook]
+
+TASK [common : Update the apt package cache] ***********************************
+ok: [epicbook]
+
+TASK [common : Install baseline packages] **************************************
+ok: [epicbook]
+
+TASK [common : Remove temporary EpicBook risk test file] ***********************
+ok: [epicbook]
+
+TASK [nginx : Install Nginx] ***************************************************
+ok: [epicbook]
+
+TASK [nginx : Deploy EpicBook Nginx site configuration] ************************
+ok: [epicbook]
+
+TASK [nginx : Enable the EpicBook site] ****************************************
+ok: [epicbook]
+
+TASK [nginx : Disable the default Nginx site] **********************************
+ok: [epicbook]
+
+TASK [nginx : Validate Nginx configuration] ************************************
+skipping: [epicbook]
+
+TASK [nginx : Ensure Nginx is started and enabled] *****************************
+ok: [epicbook]
+
+TASK [epicbook : Download the NodeSource setup script] *************************
+ok: [epicbook]
+
+TASK [epicbook : Add the NodeSource repository] ********************************
+ok: [epicbook]
+
+TASK [epicbook : Install Node.js and npm] **************************************
+ok: [epicbook]
+
+TASK [epicbook : Ensure the application directory exists] **********************
+ok: [epicbook]
+
+TASK [epicbook : Clone the EpicBook repository] ********************************
+ok: [epicbook]
+
+TASK [epicbook : Install Node.js dependencies] *********************************
+ok: [epicbook]
+
+TASK [epicbook : Check whether the database schema is already imported] ********
+skipping: [epicbook]
+
+TASK [epicbook : Import the EpicBook SQL files (schema first, then seed data)] ***
+skipping: [epicbook]
+
+TASK [epicbook : Install PM2 globally] *****************************************
+ok: [epicbook]
+
+TASK [epicbook : Check whether EpicBook is already running in PM2] *************
+skipping: [epicbook]
+
+TASK [epicbook : Remove the existing PM2 process so the current environment applies] ***
+skipping: [epicbook]
+
+TASK [epicbook : Start EpicBook with PM2 on the application port] **************
+skipping: [epicbook]
+
+TASK [epicbook : Register PM2 to start on boot] ********************************
+ok: [epicbook]
+
+TASK [epicbook : Save the PM2 process list] ************************************
+skipping: [epicbook]
+
+PLAY RECAP *********************************************************************
+epicbook                   : ok=17   changed=0    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
+
