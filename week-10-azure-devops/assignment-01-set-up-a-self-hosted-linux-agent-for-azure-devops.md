@@ -58,7 +58,7 @@ Add a screenshot from AWS or Azure showing:
 * VM status as **Running**
 * Public IP address
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-01.png)
 
 ---
 
@@ -72,7 +72,7 @@ Add an SSH terminal screenshot showing the output of:
 
 The screenshot must confirm a supported Ubuntu version, `x86_64` architecture, and a successful HTTP response from Azure DevOps.
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-02.png)
 
 ---
 
@@ -93,7 +93,7 @@ Add a terminal screenshot showing:
 * Agent service start
 * `sudo ./svc.sh status` reporting that the service is running
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-03.png)
 
 > Ensure that the PAT is not visible.
 
@@ -116,7 +116,7 @@ Add a screenshot of the Azure DevOps Agent Pool **Agents** page showing:
 * Agent status as **Online**
 * Agent enabled and available
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-04.png)
 
 ---
 
@@ -138,7 +138,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * Your Full Name
 * Linux verification commands
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-05.png)
 
 ---
 
@@ -156,7 +156,7 @@ Add a screenshot of the successful Azure DevOps pipeline run showing:
 * Output from `df -h`
 * Output from `pwd`
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-06.png)
 
 ---
 
@@ -165,7 +165,25 @@ Add your screenshot here.
 Paste the contents of your completed `azure-pipelines.yml` file below.
 
 ```yaml
-# Paste your completed azure-pipelines.yml here
+# trigger: none
+
+pool:
+  name: SelfHostedPool
+
+steps:
+  - bash: |
+      echo "Submitted by: Aanuoluwapo Tolu-Omodara"
+      echo "Agent name: $(Agent.Name)"
+      echo "Machine name: $(Agent.MachineName)"
+      echo "Operating system details:"
+      uname -a
+      echo "User executing the pipeline:"
+      whoami
+      echo "Disk usage:"
+      df -h
+      echo "Current working directory:"
+      pwd
+    displayName: Verify self-hosted Ubuntu agent
 ```
 
 > Do not include your PAT, SSH private key, password, or cloud credentials in the YAML file.
@@ -176,13 +194,15 @@ Paste the contents of your completed `azure-pipelines.yml` file below.
 
 Write a short summary of what you configured.
 
-[Write your summary here.]
+I configured a self-hosted Azure Pipelines agent on an Ubuntu VM and used it to run a test pipeline. In Azure DevOps (organization aanumary, project SelfHostedAgent), I created a Personal Access Token limited to the two scopes the agent needs, Agent Pools (Read & manage) and Build (Read & execute), and created a self-hosted agent pool named SelfHostedPool. I then provisioned an Ubuntu 24.04 LTS x64 VM in Azure (vm-selfhosted-agent, South Africa North) with key-based SSH, and restricted inbound SSH to my own public IP (/32). Outbound HTTPS to Azure DevOps was confirmed with curl before installing anything.
+
+On the VM I installed the required packages, downloaded agent v5.280.0, installed its dependencies, and registered it with ./config.sh as linux-self-hosted-agent in SelfHostedPool. I installed it as a systemd service, so it keeps running after logout, and confirmed both svc.sh status showing active (running) and the agent showing Online and enabled in Azure DevOps. Finally, I created azure-pipelines.yml targeting SelfHostedPool and ran it. The pipeline succeeded, and its log showed my full name, the agent and machine names, the Linux kernel, azureuser as the executing user, disk usage, and a working directory under the agent's _work folder on the VM. That confirms the job ran on my own machine and not on a Microsoft-hosted agent. The PAT was entered only at a hidden prompt and does not appear in any screenshot, file or YAML.
 
 ---
 
 # LinkedIn Requirement (If Applicable)
 
-## Screenshot 7 — LinkedInisor填Token Belle
+## Screenshot 7 — LinkedIn Post
 
 Add a screenshot of your LinkedIn post showing:
 
@@ -191,9 +211,9 @@ Add a screenshot of your LinkedIn post showing:
 * Three to five lines explaining your experience
 * A screenshot of the successful pipeline run with no secrets visible
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-07.png)
 
-**LinkedIn Post URL:** [Paste your LinkedIn post URL here]
+**LinkedIn Post URL:** https://lnkd.in/p/eYUVffnj
 
 ---
 
