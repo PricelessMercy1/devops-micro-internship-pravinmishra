@@ -138,7 +138,7 @@ Week 09 → Ansible
 | 07 | Azure Cloud | ✅ Completed | ✅ Solved | https://lnkd.in/p/eJ6MnHqq | https://lnkd.in/p/eD7esetE |
 | 08 | Terraform | 🔄 In Progress | 🔄 In Progress | https://lnkd.in/p/etnqRDnh | https://lnkd.in/p/e8UrbbtZ |
 | 09 | Ansible | 🔄 In Progress | 🔄 In Progress | https://lnkd.in/p/emWATWw8 | https://lnkd.in/p/eB8uwcat |
-| 10 | Azure DevOps (CI/CD) | 🔄 In Progress | 🔄 In Progress | https://lnkd.in/p/eYUVffnj | — |
+| 10 | Azure DevOps (CI/CD) | 🔄 In Progress | 🔄 In Progress | https://lnkd.in/p/eYUVffnj | https://lnkd.in/p/eSfxcQKG |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
