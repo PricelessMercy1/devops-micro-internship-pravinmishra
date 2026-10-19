@@ -37,7 +37,7 @@ Add a screenshot of Azure Repos showing:
 * `main` branch
 * Project files
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-14.png)
 
 ---
 
@@ -81,7 +81,7 @@ Add a screenshot of the Azure Pipeline YAML open in the editor showing:
 * Publish stage
 * Deploy stage
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-15.png)
 
 > Do not expose passwords, private keys, tokens, or cloud credentials.
 
@@ -104,7 +104,7 @@ Add a screenshot of one Azure DevOps pipeline run showing all four stages succee
 * Publish
 * Deploy
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-16.png)
 
 ---
 
@@ -122,7 +122,7 @@ Add a screenshot of the pipeline SSH verification log or VM terminal showing the
 
 `/var/www/html`
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-17.png)
 
 ---
 
@@ -143,7 +143,7 @@ Add a browser screenshot showing:
 * Your Full Name
 * Deployment date
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-18.png)
 
 ## Final Application URL
 
@@ -151,7 +151,7 @@ Add your screenshot here.
 
 Replace the placeholder and paste your final application URL below:
 
-[Paste your final application URL here.]
+http://3.141.10.124/
 
 ---
 
@@ -159,7 +159,16 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
+CI/CD Workflow Summary
+
+I automated the release of a React application so that every commit to the main branch is built, tested, packaged and deployed without manual steps. The infrastructure was prepared first. Terraform created an Ubuntu EC2 instance on AWS with a security group that restricts SSH to my IP and the build agent, and Ansible installed Nginx, configured it for single-page-app routing, and set the ownership of /var/www/html. The pipeline runs on a self-hosted Azure DevOps agent and has four stages, each of which only starts if the previous one succeeded:
+
+Build: installs Node.js 20 and the dependencies, runs npm run build, checks that build/index.html exists, and publishes the build folder as a pipeline artifact.
+Test: runs the unit tests in non-interactive CI mode, so a failing test stops the pipeline before anything reaches the server.
+Publish: downloads the build artifact, verifies that index.html and the static assets are present, and republishes the checked files as a deploymentPackage artifact.
+Deploy: copies the package to /var/www/html on the EC2 instance over SSH, replacing the old files, then logs in to confirm the files are there, Nginx is active and the site returns HTTP 200.
+
+Artifacts carry the build between stages, so no stage depends on files left on an agent. The SSH credentials are stored only in the Azure DevOps service connection, never in the YAML. I proved the automation by committing a small change to main: the pipeline started by itself, all four stages succeeded, and the new text appeared on the live site.
 
 ---
 
@@ -174,11 +183,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-19.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://lnkd.in/p/eegQX7nz
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 
