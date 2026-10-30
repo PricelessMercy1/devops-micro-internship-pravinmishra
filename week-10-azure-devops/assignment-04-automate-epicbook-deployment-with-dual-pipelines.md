@@ -70,7 +70,7 @@ Add a screenshot of the Infrastructure Pipeline run showing:
 * `backend_private_ip`
 * `mysql_fqdn`
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-20.png)
 
 > Do not expose the MySQL password, Client Secret, Terraform state, SSH private key, or another sensitive value.
 
@@ -86,7 +86,7 @@ Add a screenshot of the Azure Portal Resource Group overview showing:
 * Azure Database for MySQL Flexible Server
 * Related EpicBook resources
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-21.png)
 
 > Hide sensitive IDs, credentials, and database details.
 
@@ -124,7 +124,7 @@ Run the Application Pipeline to configure the VMs, deploy EpicBook, and verify t
 
 Add a screenshot of the Application Pipeline run summary showing all required stages or jobs succeeded.
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-22.png)
 
 ---
 
@@ -137,7 +137,7 @@ Add a screenshot of the Application Pipeline log showing:
 * Zero failed hosts
 * Zero unreachable hosts
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-23.png)
 
 > Do not expose the SSH private key, MySQL password, Client Secret, or complete database connection string.
 
@@ -162,7 +162,7 @@ Add a browser screenshot showing:
 
 The screenshot may show a product, cart, or successful order view.
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-24.png)
 
 > Do not expose credentials or sensitive information.
 
@@ -172,15 +172,15 @@ Add your screenshot here.
 
 ## Frontend Application URL
 
-[Paste your final EpicBook application URL here.]
+http://3.129.20.172/
 
 ## Infrastructure Repository URL
 
-[Paste your Infrastructure Repository URL here.]
+https://github.com/PricelessMercy1/infra-epicbook
 
 ## Application Repository URL
 
-[Paste your Application Repository URL here.]
+https://github.com/PricelessMercy1/theepicbook
 
 ---
 
@@ -188,7 +188,7 @@ Add your screenshot here.
 
 Write a short explanation of why separate Infrastructure and Application Repositories were used.
 
-[Write your explanation here.]
+I used two separate repositories because infrastructure and application code change for different reasons and carry different risks. The infrastructure repository (`infra-epicbook`) holds the Terraform that builds the network, the two servers, and the managed MySQL database, together with its own pipeline. A mistake there can change networks or databases, so it goes through validate, plan, and a manual approval before anything is applied. The application repository (`theepicbook`) holds the EpicBook code, the Ansible roles, and the application pipeline, which configures the servers and deploys the app. Keeping them apart gives each its own history, its own pipeline, and its own permissions: the infrastructure pipeline alone can use the cloud credentials, and only the application pipeline can use the SSH key and database secrets.
 
 ---
 
@@ -201,7 +201,7 @@ Write a short explanation of how the following non-sensitive Terraform outputs w
 * `backend_private_ip`
 * `mysql_fqdn`
 
-[Write your explanation here.]
+After the Infrastructure Pipeline finished, I opened the successful run, went to the Outputs stage, and read the four non-sensitive values it printed. I copied them by hand into the Application Repository. `app_public_ip` and `backend_ansible_host` went into the Ansible inventory (`ansible/inventory/hosts.ini`), the first in the `[frontend]` group and the second in the `[backend]` group. `backend_private_ip` and `mysql_fqdn` went into `ansible/group_vars/all.yml`, so Nginx proxies to the backend's private address and the application connects to the database through its private endpoint. Only these four values were transferred. No password, SSH key, access key, or Terraform state was copied or committed. The database credentials stay in a locked Azure DevOps variable group, and the SSH key stays in Secure Files. I committed the change to `main` with a clear message, and the Application Pipeline then used these values.
 
 ---
 
@@ -216,11 +216,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![Week 10 Screenshots](screenshots/Week-10-screenshots-25.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://lnkd.in/p/egAfjugb
 
 Your post must include:
 
