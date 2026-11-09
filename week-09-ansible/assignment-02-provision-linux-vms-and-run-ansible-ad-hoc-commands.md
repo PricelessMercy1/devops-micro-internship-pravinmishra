@@ -299,7 +299,7 @@ Once the VMs were finally up, I did hit one direct SSH/inventory issue: my home 
 
 # Required Files
 
-Confirm that the following files are included in your assignment workspace:
+The Terraform filenames below follow the recommended structure. An alternative organization is accepted if it meets the assignment requirements.
 
 - [ ] `ansible-adhoc-lab/README.md`
 - [ ] `ansible-adhoc-lab/terraform/providers.tf`
