@@ -214,7 +214,7 @@ Create a LinkedIn post describing what you deployed, the deployment process, and
 
 #### LinkedIn Post Screenshot
 
-![Week 11 Screenshots](screenshots)
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-10.png)
 
 ---
 
