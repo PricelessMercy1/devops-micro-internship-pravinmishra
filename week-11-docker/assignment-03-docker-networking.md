@@ -28,7 +28,7 @@ docker network ls
 
 The output must include the default `bridge`, `host`, and `none` networks.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-19.png)
 
 ---
 
@@ -40,7 +40,7 @@ Add a screenshot of the terminal showing successful completion of:
 docker pull nginx:alpine
 ```
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-20.png)
 
 ---
 
@@ -58,7 +58,7 @@ The output must show the running `myweb` container with:
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-21.png)
 
 ---
 
@@ -72,7 +72,7 @@ http://<YOUR-VM-PUBLIC-IP>
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-22.png)
 
 ---
 
@@ -92,7 +92,7 @@ Add a screenshot of the terminal showing `mynetwork` in:
 docker network ls
 ```
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-23.png)
 
 ---
 
@@ -106,7 +106,7 @@ docker ps
 
 The output must show both `web` and `client` containers running without published host ports.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-24.png)
 
 ---
 
@@ -120,7 +120,7 @@ docker exec client wget -qO- http://web
 
 The output must display the Nginx Welcome Page HTML.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-25.png)
 
 ---
 
@@ -134,7 +134,7 @@ docker network inspect mynetwork
 
 The output must show both `web` and `client` connected to `mynetwork`.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-26.png)
 
 ---
 
@@ -156,7 +156,7 @@ docker network ls
 
 The output must include both `frontend-network` and `backend-network`.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-27.png)
 
 ---
 
@@ -174,7 +174,7 @@ The output must show:
 - `backend` without a published host port
 - `db` without a published host port
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-28.png)
 
 ---
 
@@ -188,7 +188,7 @@ docker network inspect frontend-network
 
 The output must show `frontend` and `backend`.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-29.png)
 
 ---
 
@@ -202,7 +202,7 @@ docker network inspect backend-network
 
 The output must show `backend` and `db`.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-30.png)
 
 ---
 
@@ -216,7 +216,7 @@ docker exec frontend wget -qO- http://backend
 
 The output must display the Nginx Welcome Page HTML.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-31.png)
 
 ---
 
@@ -224,7 +224,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing a successful connection to `db` on port `27017` from the `backend` container.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-32.png)
 
 ---
 
@@ -238,7 +238,7 @@ The output must include:
 Expected result: frontend cannot reach db
 ```
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-33.png)
 
 ---
 
@@ -252,7 +252,7 @@ http://<YOUR-VM-PUBLIC-IP>
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-34.png)
 
 ---
 
@@ -274,7 +274,7 @@ docker ps
 
 The output must show the running `fastapp` container.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-35.png)
 
 ---
 
@@ -292,7 +292,7 @@ The output must confirm:
 "NetworkMode": "host"
 ```
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-36.png)
 
 ---
 
@@ -306,7 +306,7 @@ http://<YOUR-VM-PUBLIC-IP>
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-37.png)
 
 ---
 
@@ -319,7 +319,7 @@ docker stop fastapp
 docker rm fastapp
 ```
 
-Add your screenshot here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-38.png)
 
 ---
 
@@ -332,7 +332,19 @@ Write a short note explaining:
 - Why the frontend could not access the database in Task 3
 - The difference between bridge mode and host network mode
 
-Write your note here.
+## Networking Notes
+
+**Default bridge networking**
+When I ran `myweb` without a `--network` option, Docker attached it to the default `bridge` network. The container received a private IP address, and `-p 80:80` published host port 80 to container port 80 so I could open the Nginx page in a browser. On this default network, containers can only reach each other by IP address, which is unreliable because IPs can change when containers restart.
+
+**Container-name communication on a custom bridge network**
+On the custom `mynetwork`, Docker provides built-in DNS, so containers can find each other by name. From the `client` container, `wget -qO- http://web` returned the Nginx Welcome Page without any IP address. `web` had no published port, so it was reachable only by containers on `mynetwork`, not from my browser.
+
+**Why the frontend could not access the database in Task 3**
+`frontend` was attached only to `frontend-network`, and `db` was attached only to `backend-network`. They shared no network, so the test from `frontend` failed with "Name does not resolve": Docker's DNS could not even find `db` for it. `backend` was on both networks, so it could reach `db` (the `nc` test succeeded) and was reachable by `frontend`. Docker does not forward traffic between networks automatically. This showed that network isolation comes from limiting which networks each container joins, and that only the frontend needs a published port.
+
+**Bridge mode vs host network mode**
+In bridge mode, a container has its own private network and IP, is isolated from the host, and needs `-p` to be reached from outside. In host mode, as with `fastapp`, the container shares the host's network stack, so Nginx listened on the host's port 80 directly with no port mapping. Host mode removes network isolation and can cause port conflicts, so bridge networks are the better default, with host mode reserved for special cases.
 
 ---
 
@@ -348,13 +360,13 @@ Create a LinkedIn post about the Docker networking modes explored, one key lesso
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/eBjj64Vw
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
+![Week 11 Screenshots](screenshots/Week-11-Screenshot-39.png)
 
 ---
 
